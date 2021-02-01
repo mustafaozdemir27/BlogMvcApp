@@ -1,0 +1,17 @@
+﻿
+@using (Html.BeginForm("List", "Blog", FormMethod.Get))
+{
+    <div class="">
+        <h4>Blog Ara</h4>
+        <div class="input-group pt-1">
+                @Html.TextBox("q", null, new { @class = "form-control" })
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search "></i>
+                    </button>
+                </span>
+
+        </div>
+    </div>
+}
+
